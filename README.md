@@ -12,8 +12,8 @@ In this challenge, we helped Jeremy and the data analytics team do the following
 
 This new assignment consists of three technical analysis deliverables and a proposal for further statistical study. We submited the following:
 
-#Deliverable 1: Linear Regression to Predict MPG.
-## Linear Regression to Predict MPG
+# Deliverable 1: Linear Regression to Predict MPG.
+## Linear Regression to Predict MPG.
 
 ![summary](https://user-images.githubusercontent.com/92646311/180630437-b72f1f3f-7316-4013-8049-56d69f39dd46.png)
 
@@ -22,9 +22,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 
 - The p-Value is 5.35e-11, which is  smaller than the assumed significance level of 0.05%. There is sufficient evidence to reject our null hypothesis, which indcates The slope of the linear model considered to be not zero.
 
--Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-
-This linear model has an r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively
+- This linear model has an r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively.
 
 # Deliverable 2: Create Visualizations for the Trip
 
@@ -42,6 +40,7 @@ This linear model has an r-squared value of 0.7149, which means that 71% of all 
 ![all_lots](https://user-images.githubusercontent.com/92646311/180630684-147fe8d9-7e3a-4b40-9e51-d5a58e9f1a69.png)
 
 ** Lot1
+
 ![lot1](https://user-images.githubusercontent.com/92646311/180630698-30f2446c-8d9f-4222-b56a-d74b54081b5d.png)
 
 ** Lot2
@@ -53,6 +52,5 @@ This linear model has an r-squared value of 0.7149, which means that 71% of all 
 ![lot3](https://user-images.githubusercontent.com/92646311/180630725-5a4ecb38-7bad-48a2-b205-e915cc486909.png)
 
 ## Summary T-Tests on Suspension Coils
-
 
 # Deliverable 4: Design a Study Comparing the MechaCar to the Competition.
