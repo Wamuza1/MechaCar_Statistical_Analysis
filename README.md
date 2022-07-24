@@ -18,7 +18,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 ![summary](https://user-images.githubusercontent.com/92646311/180630437-b72f1f3f-7316-4013-8049-56d69f39dd46.png)
 
 
-- The vehicle length, and vehicle ground clearance variables/coefficients provided a non-random amount of variance to the mpg values in the dataset.They have an  impact on miles per gallon on the MechaCar prototype. Moreover, other variables such as:  vehicle weight, spoiler angle, and AWD  indicate a random amount of variance. 
+- The vehicle_length, and vehicle_ground clearance variables/coefficients provided a non random amount of variance to the mpg values in the dataset.They have an  impact on miles per gallon on the MechaCar prototype. Moreover, other variables such as:  vehicle weight, spoiler angle, and AWD  indicate a random amount of variance. 
 
 - The p-Value is 5.35e-11, which is  smaller than the assumed significance level of 0.05%. There is sufficient evidence to reject our null hypothesis, which indcates The slope of the linear model considered to be not zero.
 
@@ -72,8 +72,11 @@ The mean of the sample is 1500.2, and the p-Value is 0.6072,  which is higher th
 ** The metrics I want to test are cost and vehicle safty features.
 ** Data for the statistical test across all major manufacturers for past 2 years.
 - cost
+
 Selling cost (Dependent variable)
-- Vehical safty features(Independent variable)
+
+-  Vehical safty features(Independent variable)
+
 Partially Automated Safety Features
 Lane Keeping Assist
 Adaptive Cruise Control
