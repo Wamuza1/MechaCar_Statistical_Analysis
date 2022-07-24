@@ -51,14 +51,19 @@ Using our knowledge of R, we performed t-tests to determine if all manufacturing
 
 ![lot1](https://user-images.githubusercontent.com/92646311/180630698-30f2446c-8d9f-4222-b56a-d74b54081b5d.png)
 
+The mean of the sample is 1500, and the p-Value is 1,  which is higher than the common significance level of 0.05. Therefore, there is not enough evidence to support rejecting the null hypothesis.
+
 ** Lot2
 
 ![lot2](https://user-images.githubusercontent.com/92646311/180630718-e9618f94-42b0-4f93-a854-808e329bf622.png)
+
+The mean of the sample is 1500.2, and the p-Value is 0.6072,  which is higher than the common significance level of 0.05. Therefore, the null hypothesis cannot be rejected.
 
 ** Lot3
 
 ![lot3](https://user-images.githubusercontent.com/92646311/180630725-5a4ecb38-7bad-48a2-b205-e915cc486909.png)
 
+ The sample mean is 1496.14, and the p-Value is 0.04, which is lower than the common significance level of 0.05. There is sufficient statistical evidence to reject  the null hypothesis and there is a statistical difference between Lot 3 and the population mean.
 ## Summary T-Tests on Suspension Coils
 
 # Deliverable 4: Design a Study Comparing the MechaCar to the Competition.
