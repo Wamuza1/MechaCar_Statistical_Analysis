@@ -22,7 +22,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 
 - The p-Value is 5.35e-11, which is  smaller than the assumed significance level of 0.05%. There is sufficient evidence to reject our null hypothesis, which indcates The slope of the linear model considered to be not zero.
 
-- This linear model has an r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively.
+- This linear model has a r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively.
 
 # Deliverable 2: Create Visualizations for the Trip
 
@@ -32,12 +32,20 @@ This new assignment consists of three technical analysis deliverables and a prop
 
 ## Summary Statistics on Suspension Coils
 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+- Total summary variance is approximately 62.29 PSI which meet the design specification.
+- lots individuals, the first two lotas meet the design specification at a varaince of approximately 0.98(PSI) and 7.47(PSI), but the  lot3 showing larger variance in performance and consistency, with a variance of 170.29 PSI and exceeding the design specification. Therefore, the manufacturing team should work within lots1 and lot2.
+
 
 # Deliverable 3: T-Tests on Suspension Coils.
+Using our knowledge of R, we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 ** All lots
 
 ![all_lots](https://user-images.githubusercontent.com/92646311/180630684-147fe8d9-7e3a-4b40-9e51-d5a58e9f1a69.png)
+
+ The mean of the sample is 1498.78, and the p-Value is 0.06,  which is higher than the common significance level of 0.05. Therefore, there is NOT enough evidence to support rejecting the null hypothesis.
 
 ** Lot1
 
