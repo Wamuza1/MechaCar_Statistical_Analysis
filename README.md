@@ -67,3 +67,21 @@ The mean of the sample is 1500.2, and the p-Value is 0.6072,  which is higher th
 ## Summary T-Tests on Suspension Coils
 
 # Deliverable 4: Design a Study Comparing the MechaCar to the Competition.
+## Study Design: MechaCar vs Competition
+
+** The metrics I want to test are cost and vehicle safty features.
+** Data for the statistical test across all major manufacturers for past 2 years.
+- cost
+Selling cost (Dependent variable)
+- Vehical safty features(Independent variable)
+Partially Automated Safety Features
+Lane Keeping Assist
+Adaptive Cruise Control
+Traffic Jam Assist
+
+** Hypothesis: Null and Alternative
+- Null Hypothesis (Ho): MechaCar is priced correctly based on its performance of vehicle safty features.
+- Alternative Hypothesis (Ha): MechaCar is NOT priced correctly based on its  performance of vehicle safty features.
+
+** Statistical test
+Multi-linear regression, box plot grouped by saftry features, and t-test after collecting data from  all major manufacturers competitor vehicles. Our t-test will be comparing the population mean for each metric.
