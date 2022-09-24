@@ -1,4 +1,5 @@
 # MechaCar_Statistical_Analysis
+Statistical analysis by using R and with dplyr library on RStudio. 
 
 # Overview
 
