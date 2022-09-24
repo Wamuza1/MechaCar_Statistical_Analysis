@@ -1,19 +1,17 @@
 # MechaCar_Statistical_Analysis
 
+# Overview
 
-A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has a data analytics team to review the production data for insights that may help the manufacturing team.
 
-In this challenge, we helped Jeremy and the data analytics team do the following:
+In this project, we helped the data analytics team do the following:
 
 - Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
 - Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 - Run t-tests to determine if the manufacturing lots are statistically different from the mean population
 - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
 
-This new assignment consists of three technical analysis deliverables and a proposal for further statistical study. We submited the following:
-
-# Deliverable 1: Linear Regression to Predict MPG.
-## Linear Regression to Predict MPG.
+# Linear Regression to Predict MPG.
 
 ![summary](https://user-images.githubusercontent.com/92646311/180630437-b72f1f3f-7316-4013-8049-56d69f39dd46.png)
 
@@ -24,7 +22,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 
 - This linear model has a r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively.
 
-# Deliverable 2: Create Visualizations for the Trip
+# Create Visualizations for the Trip
 
 ![total-summary](https://user-images.githubusercontent.com/92646311/180630621-f35296ff-db8d-4c42-b683-4514b633b2ea.png)
 
@@ -38,7 +36,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
 - lots individuals, the first two lotas meet the design specification at a varaince of approximately 0.98(PSI) and 7.47(PSI), but the  lot3 showing larger variance in performance and consistency, with a variance of 170.29 PSI and exceeding the design specification. Therefore, the manufacturing team should work within lots1 and lot2.
 
 
-# Deliverable 3: T-Tests on Suspension Coils.
+#  T-Tests on Suspension Coils.
 Using our knowledge of R, we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 ** All lots
