@@ -23,7 +23,6 @@ In this project, we helped the data analytics team do the following:
 
 - This linear model has a r-squared value of 0.7149, which means that 71% of all mpg predictions will be determined by this linear model predict mpg of MechaCar prototypes effectively.
 
-# Create Visualizations for the Trip
 
 ![total-summary](https://user-images.githubusercontent.com/92646311/180630621-f35296ff-db8d-4c42-b683-4514b633b2ea.png)
 
