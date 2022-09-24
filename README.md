@@ -64,7 +64,7 @@ The mean of the sample is 1500.2, and the p-Value is 0.6072,  which is higher th
  The sample mean is 1496.14, and the p-Value is 0.04, which is lower than the common significance level of 0.05. There is sufficient statistical evidence to reject  the null hypothesis and there is a statistical difference between Lot 3 and the population mean.
 ## Summary T-Tests on Suspension Coils
 
-# Deliverable 4: Design a Study Comparing the MechaCar to the Competition.
+# Study Design: Comparing the MechaCar to the Competition.
 ## Study Design: MechaCar vs Competition
 
 ** The metrics I want to test are cost and vehicle safty features.
