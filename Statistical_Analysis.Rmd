@@ -1,0 +1,101 @@
+---
+title: "Statistical_Analysis"
+author: "Saba_Amin"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+# Clear environment
+rm(list = ls()) 
+
+# Clear console
+cat("\014")  # ctrl+L
+```
+
+
+```{r}
+demo_table <- read.csv(file = "resources/demo.csv", check.names = F, stringsAsFactors = F )
+#View(table)
+```
+
+##########################
+
+
+The tidyverse package contains libraries such as dplyr, tidyr, and ggplot2. These packages work together to help simplify the process of creating transformed data columns, grouping data using factors, reshaping our two-dimensional data structures, and visualizing our results using plots.
+
+```{r}
+#install.packages("jsonlite")
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+```
+
+
+```{r}
+demo_table2 <- fromJSON(txt='resources/demo.json')
+```
+
+##################################################
+
+Adding column to orignal data frame mutate() function
+```{r}
+demo_table <-  mutate(demo_table, Mileage_per_Year=Total_Miles/(2020-Year),IsActive=TRUE)
+demo_table
+```
+
+######################################################
+The behavior of group_by() is almost identical to that of the Pandas DataFrame.groupby() function, with the exception of using a value or vector instead of a list. Once we have our group_by data structure, we use the dplyr summarize() function to create columns in our summary data frame.
+```{r}
+summarize(demo_table, Mean=mean(Total_Miles) )
+```
+####################################################
+
+Reshape Data
+
+#####################################################
+The tidyr library from the tidyverse has the gather() and spread() functions to help reshape our data. The gather() function is used to transform a wide dataset into a long dataset.tidyr's spread() function to spread out a variable column of multiple measurements into columns for each variable.
+```{r}
+demo_table3 <- read.csv('resources/demo2.csv',check.names = F,stringsAsFactors = F)
+```
+
+##################################################
+ggplot function—tells ggplot2 what variables to use
+geom function—tells ggplot2 what plots to generate
+Mapping uses the aes() aesthetic function to tell ggplot() what variables are assigned to the x (independent) and y (dependent) variables.
+##################################################
+
+Bar plot
+
+
+```{r}
+plt <- ggplot(mpg,aes(x=class)) #import dataset into ggplot2
+plt + geom_bar() +  xlab("Class_NAMES") + ylab("COUNT")  + aes(fill = drv) #plot a bar plot
+```
+box plot
+
+```{r}
+plt <- ggplot(mpg,aes(x=manufacturer,y=hwy)) #import dataset into ggplot2
+plt + geom_boxplot() + theme(axis.text.x=element_text(angle=45,hjust=1))+ aes(fill = drv) #add boxplot and rotate x-axis labels 45 degre
+```
+
+
+```{r}
+mpg_summary <- mpg %>% group_by(model,year) %>% summarize(Mean_Hwy=mean(hwy), .groups = 'keep') #create summary table
+plt <- ggplot(mpg_summary, aes(x=model,y=factor(year),fill=Mean_Hwy)) #import dataset into ggplot2
+plt + geom_tile() + labs(x="Model",y="Vehicle Year",fill="Mean Highway (MPG)") +  theme(axis.text.x = element_text(angle=90,hjust=1,vjust=.5)) #rotate x-axis labels 90 degree
+```
+
+
+
+
